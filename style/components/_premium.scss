@@ -1,0 +1,75 @@
+.pop-up_premium{
+    position: fixed;
+    display: none; //flex
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 15;
+    background: rgba(0,0,0,0.3);
+    .container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        img[alt="close"]{
+            width: 25px;
+            margin-left: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    }
+    &_content{
+        width: 280px;
+        background: #fff;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 35px rgba(0,0,0,0.3);
+        h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFC400;
+            img{
+                width: 25px;
+                margin-left: 10px;
+            }
+        }
+        p{
+            font-size: 15.5px;
+            line-height: 20px;
+            margin: 8px 0;
+            a{
+                color: #0099ff;
+            }
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            padding: 0 30px;
+            border: 2px solid rgba(255,196,0,1);
+            border-radius: 20px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            &.green{
+                border-color: green;
+            }
+        }
+        .input{
+            position: relative;
+            img{
+                width: 25px;
+                position: absolute;
+                right: 15px;
+                top: 12px;
+                cursor: pointer;
+            }
+            &.wrong{
+                animation: wrong 0.25s 0s forwards;
+                input{
+                    border-color: red;
+                }
+            }
+        }
+    }
+}

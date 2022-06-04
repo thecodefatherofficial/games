@@ -1,0 +1,20 @@
+body, *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    .body{
+        width: 100%;
+        overflow: hidden;
+    }
+    .container{
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+::-webkit-scrollbar{
+    width: 7px;
+    &-thumb{
+        background-color: #a311c0;
+    }
+}
